@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TuringDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="welcome_tips">
+        <item>Hey buddy</item>
+        <item>Long time no see</item>
+        <item>How are you doing</item>
+        <item>I am Turing Robot</item>
+        <item>Nice to meet you</item>
+
+
+    </string-array>
+</resources>

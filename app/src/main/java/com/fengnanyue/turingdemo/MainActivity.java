@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements HttpGetDataListen
     private String content_str;
     private TextAdapter adapter;
     private String[] welcome_array;
-    private double currentTime,oldTime = 0;
+    private double currentTime=0,oldTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements HttpGetDataListen
         SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
         Date curDate =new Date();
         String str = format.format(curDate);
-        if(currentTime- oldTime>=5*60*1000 ){
+        if(currentTime- oldTime>=500 ){
             oldTime = currentTime;
             return str;
         }else{
